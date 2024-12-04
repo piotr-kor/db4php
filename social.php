@@ -18,7 +18,7 @@ function social_links()
 		$soc = '';	
 		if ($result = $connection -> query("SELECT * FROM socjale")) {
 			while($wiersz = mysqli_fetch_assoc($result)){
-				$soc = $soc.'<a href="index.php?id='.$wiersz['id'].'">'.$wiersz['nazwasocjala'].'</a><br>';
+				$soc = $soc.'<a href="'.$wiersz['link'].'">'.$wiersz['nazwasocjala'].'</a><br>';
 				}
 			$result -> free_result();
 			}
