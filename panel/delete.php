@@ -1,5 +1,6 @@
 <?php
 include ('../db_config.php');
+include ('auth.php');
 
 if (!isset($_GET['id_do_usuniecia'])){
 		$output = '<form action="delete.php" method="GET">
